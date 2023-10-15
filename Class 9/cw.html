@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative FrontEnd</title>
+</head>
+<body>
+    <!-- Transforms, Transitions, Animations, Media Queries, Flexbox => Creative FrontEnd -->
+    <style>
+        .container{
+            display: flex;
+            max-width: 1140px;
+            margin: 0 auto;
+            gap: 3rem;
+        }
+
+        .box{
+            border: 2px solid gray;
+            padding: 20px;
+            /* CSS transform methods => 
+            translate, translateX, translateY, rotate, scale, scaleX, scaleY, skew, skewX, skewY. 
+            Matrix combines the previous methods, matrix(scaleX, skewY, skewX, scaleY, translateX, translateY)*/
+            transform: translate(50px, 150px); 
+        }
+    </style>
+
+    <main>
+        <section class="container">
+            <div class="box">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, maiores atque laudantium adipisci laborum molestiae sequi sunt eius, eos accusantium fuga architecto fugit ratione illo dolorem itaque similique voluptas porro.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="box">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, maiores atque laudantium adipisci laborum molestiae sequi sunt eius, eos accusantium fuga architecto fugit ratione illo dolorem itaque similique voluptas porro.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="box">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, maiores atque laudantium adipisci laborum molestiae sequi sunt eius, eos accusantium fuga architecto fugit ratione illo dolorem itaque similique voluptas porro.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

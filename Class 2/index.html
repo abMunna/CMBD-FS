@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            User Registration
+        </legend>
+
+        <form action="" method="">
+            <label for="userName">Your Name</label>
+            <input id="username" type="text" placeholder="John Snow" required>
+            <br><br>
+            
+            <label for="userEmail">Your Email</label>
+            <input id="userEmail" type="email" placeholder="johnsnow@gmail.com" required>
+            <br><br>
+            
+            <label for="userPhone">Your Phone</label>
+            <input id="userPhone" type="number" placeholder="+880123456789" required>
+            <br><br>
+            
+            <label for="userPassword">Your Password</label>
+            <input id="userPassword" type="text" placeholder="Use a secure password" required>
+            <br><br>
+            
+            <label for="">Gender</label>
+            <br>
+            <input type="radio" id="male" name="gender"/>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender"/>
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="birthDate">Date of Birth</label>
+            <input type="date" name="" id="birthDate" required>
+            <br><br>
+
+            <label for="uploadImg">Upload Image</label>
+            <input type="file" name="" id="uploadImg" accept="image/*">
+            <br><br>
+         
+            <label for="userCountry">Your Country</label>
+            <select name="" id="userCountry">
+                <option value="">Choose Your Country</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+            </select>
+            <br><br>
+
+            <label for="comment">Message Us</label>
+            <br>
+            <textarea name="" id="comment" cols="50" rows="5" placeholder="Have any concerns or questions?"></textarea>
+            <br><br>
+
+            <input type="checkbox" name="" id="terms" required>
+            <label for="terms">Agree to the Terms & Conditions</label>
+            <span style="color: red;">*</span>
+            <br><br>
+
+            <input type="submit" name="" id="" value="Submit Form"/>
+            <input type="reset" name="" id="" />
+        </form>
+    </fieldset>
+</body>
+</html>

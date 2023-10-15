@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Roboto:wght@100&display=swap');
+
+
+/* Global Styles Start*/
+
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root{} or html{} both works here  */
+:root{
+    --primary-color:#0A8270;
+    --bg-color: #F6F3EB;
+    --heading-color:#314D4A;
+    --text-color:#646D6C;
+    --white-color:#ffffff;
+    font-size: 10px;
+}
+
+::selection{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: 7rem;
+    color: var(--heading-color);
+    font-weight: 700;
+    line-height: 8rem;
+}
+
+h2{
+    font-size: 4.2rem;
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+h3{
+    font-size: 2.6rem;
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+h4{
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.primary-btn{
+    padding: 1.5rem 3.8rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: inline-block;
+}
+
+/* Global Styles End*/
+
+
+
+/* Header Styles Start*/
+
+header{
+    background-color: var(--bg-color);
+    padding: 3rem 0;
+}
+
+.header-flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo h2{
+    font-size: 2.8rem;
+    color: var(--heading-color);
+}
+
+nav ul{
+    display: flex;
+    gap: 4rem;
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+/* Header Styles End */
+
+/* Hero Section Style Start */
+
+.hero{
+    padding: 6rem 0;
+    background-color: var(--bg-color);
+}
+
+.hero-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content{
+    max-width: 490px;
+}
+
+.hero-content h2{
+    font-size: 6.4rem;
+}
+
+.hero-content p{
+    margin: 3rem 0;
+}
+
+/* Hero Section Style End */
+
+
+/* max-width -> desktop to mobile 
+min-width -> mobile to desktop */
+
+@media(max-width:600px){
+    html{
+        font-size: 8px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .container{
+        padding: 0 1rem;
+    }
+
+    .hero-wrapper{
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    .hero-img img{
+        max-width: 400px;
+    }
+
+    .hero-img{
+        order: 1;
+    }
+
+    .hero-content{
+        order: 2;
+    }
+}

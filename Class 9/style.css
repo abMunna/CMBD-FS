@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Roboto:wght@100&display=swap');
+
+
+/* Global Styles Start*/
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root{} or html{} both works here  */
+:root {
+    --primary-color: #0A8270;
+    --bg-color: #F6F3EB;
+    --heading-color: #314D4A;
+    --text-color: #646D6C;
+    --white-color: #ffffff;
+    font-size: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 85%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 8rem;
+    color: var(--heading-color);
+}
+
+h2 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: var(--text-color);
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+
+/* Global Styles End*/
+
+
+/* Header Styles Start */
+
+.header {
+    background-color: var(--bg-color);
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    font-size: 1.6rem;
+}
+
+.primary-button a {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
+}
+
+/* Header Styles End */
+
+/* Section One Style start */
+
+.hero {
+    background-color: var(--bg-color);
+}
+
+.hero-wrapper {
+    display: flex;
+    gap: 20rem;
+    padding: 7rem 0;
+}
+
+.hero-content {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Hero Style end */
+
+
+/* Work Style end */
+
+.work-process {
+    margin: 20rem auto 8rem auto;
+    text-align: center;
+}
+
+.work-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin-bottom: 20rem;
+}
+
+.content-border {
+    border: 2px solid var(--primary-color);
+    padding: 4rem;
+    text-align: center;
+}
+
+/* Work Style end */
+
+/* Projects Style Start */
+.projects {
+    background-color: var(--bg-color);
+}
+
+.projects-intro {
+    padding-top: 10rem;
+}
+
+.projects-wrapper {
+    padding-bottom: 15rem;
+}
+
+.projects-content-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-content-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-margin-top {
+    margin-top: -10rem;
+}
+
+.projects-margin-bottom {
+    margin-top: 8rem;
+}
+
+.projects-content-padding {
+    padding: 2rem 0;
+}
+
+/* Projects Style End */
+
+
+/* Experience Style Start */
+
+.experience {
+    background-color: var(--primary-color);
+}
+
+.experience-wrapper h2 {
+    color: var(--white-color);
+}
+
+.experience-wrapper p {
+    color: var(--white-color);
+}
+
+.experience-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30rem;
+    text-align: center;
+}
+
+/* Experience Style End */
+
+
+/* Clients Style Start */
+
+.clients-intro {
+    margin: 20rem 0 10rem 0;
+    text-align: center;
+}
+
+.clients-wrapper {
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.clients-wrapper p {
+    font-size: 1.4rem;
+}
+
+.clients-one {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.clients-two {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.clients-three {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Clients Style End */
+
+
+/* Clients Style Start */
+
+.contact-wrapper{
+    padding: 20rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-input{
+    height: 5rem;
+    width: 50rem;
+    margin: 1rem 0;
+    border: 1px solid #E1E5E5;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding-left: 3rem;
+}
+
+.form-textarea{
+    height: 15rem;
+    width: 50rem;
+    margin: 1rem 0;
+    border: 1px solid #E1E5E5;
+    color: var(--text-color);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+
+.form-button{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1.2rem 3rem;
+    font-size: 1.6rem;
+    border: none;
+    margin-left: 40.2rem;
+}
+
+.info-block-top-border{
+    border: 1rem solid var(--primary-color);
+    margin-top: 7rem;
+}
+
+.info-block{
+    background-color: var(--heading-color);
+    height: 20rem;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.contact-info{
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+/* Clients Style End */
+
+
+/* Footer Style Start */
+
+.footer{
+    background-color: var(--bg-color);
+    border-bottom: 1rem solid var(--primary-color);
+}
+
+.footer-wrapper{
+    padding: 10rem 0 5rem 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-wrapper p{
+    font-size: 1.4rem;
+}
+
+.footer-logo{
+    min-width: 50%;
+}
+/* Footer Style End */
+
+
+

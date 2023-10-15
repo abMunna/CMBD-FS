@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins';
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 48px;
+            color: #385F96;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 36px;
+            color: #385F96;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        /* Navbar */
+
+        .navbar {
+            margin: 50px 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #385F96;
+        }
+
+        .navbar-div {
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+        }
+
+        .buttons {
+            border-radius: 30px;
+            font-size: 16px;
+            padding: 15px 30px;
+            background-color: #385F96;
+            color: #ffffff;
+        }
+
+        /* SECTION - 1 */
+
+        .section-1 {
+            margin: 250px 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section-1-img-1 {
+            position: absolute;
+            margin: 150px 50px;
+        }
+
+        .section-1-texts {
+            width: 40%;
+            margin-top: 40px;
+        }
+
+
+        /* Section 2 */
+
+        .section-2 {
+            margin: 200px 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section-2-texts {
+            width: 50%;
+            margin-top: 40px;
+        }
+
+
+        /* Section 3 */
+
+        .section-3-bg-img{
+            background-image: url("https://s3-alpha-sig.figma.com/img/5fd1/e70e/c27fcf19377a4c31da6cad26e3784c27?Expires=1696809600&Signature=f-WxdBTo64HeYEs52D3rsEN-ounx0I9-PE33ade634VQweyBs9arX5XnconRtiP6UC~XYs0TyN7jN9nT4p5L9bqhTVHimOBu~LMgQIfE6YC~Fd3~Uofb1L2BNlZJsBvAH5nIxGrCV87USSlcahwwyjYvRGM3gIyS9Qv9eV9Oo76mLV~bmnQ-8bKSsrPf-SFMyFT0NZARJEKLlYOQ5XyuX6-YHEziwt~8SKLS7CkuUZBMUg7B0LDIv1oDkb9i3T~5MSp~K3gxauKrKwmqOWxKAIxLuatkn3-SZ0CzALQxv8s3MDRfej6aRXa8KIZR0wLeeLu3nVjg-P-JidkgIRIBhw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+            background-color: #78E5EB;
+            margin-top: 200px;
+            height: 600px;
+        }
+
+        .section-3{
+            margin: 200px 150px 0px 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section-3-texts{
+            margin-top: 200px;
+            width: 40%;
+        }
+
+        .section-3-image{
+            margin-top: 100px;
+        }
+
+
+        /* Footer */
+        footer{
+            color: #ffffff;
+            background-color: #385F96;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+
+    <header class="navbar">
+        <h1>wOrK</h1>
+        <div class="navbar-div">
+            <div class="links">Home</div>
+            <div class="links">About</div>
+            <div class="links">Services</div>
+            <div class="links">Contact</div>
+        </div>
+        <button class="buttons">Explore</button>
+    </header>
+
+    <!-- Section 1 Image 1 -->
+    <div class="section-1-img-1">
+        <img src="https://s3-alpha-sig.figma.com/img/ec02/ab90/5cecb782c4e2e30ca3a7df9b66a4c3d6?Expires=1696809600&Signature=CTnaSXiamNcQbyw-UvupbFeODaB4gz2hOYqotpSSGbacUUJrl06gKO1TsGV4AnBA6Kt3-GBaG6es4ci8Z3MAnhQi7fkoHMA0aeRNpDNR8X0VOZsiVr6GmfOLYpqt-Hu5yKMvCURFH~phd8C-gink8xtdZzEKQJ0AE9l0cjQZDtWzYkHmms5x~pdkWlXQXZmFQ3KiObsZC8CFp5TMchv9yLNcV9VCf-QRV8R12JHqQHrnNp0N2g7mal1TT3IDa-FUvIhIxxb7lYlSj5C1TfAxClp~MoGNZlbssaVgQW6L8nMEcCwZFV6na~v--pwHY9WzJ5rvJaWPpmEI-RzUaqFWWg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt="Image">
+    </div>
+
+    <main>
+        <!-- Section 1 -->
+        <section>
+            <div class="section-1">
+                <div class="section-1-texts">
+                    <h1>Creativity Is The Key Of Success</h1> <br>
+
+                    <p>Our mission is to provide quality English language instruction a variety of coursesp to
+                        international and local students in a professional and supportive atmosphere English teaching.
+                    </p> <br>
+
+                    <button class="buttons">Learn More</button>
+                </div>
+
+                <div>
+                    <img height="400px"
+                        src="https://s3-alpha-sig.figma.com/img/3702/a499/7b094f48887c707f9e35d394dd249015?Expires=1696809600&Signature=KhMpjKwfpkIEi8IP53Geb0wUqEp8D1ywTXauFYpfBs~q3fS4GJuBlQ~-30J96BbwSMWMXCfE-W-GCX51hM5L0zUvY1w9fnuPvFb-4xnV8bn8mRW9198NkrHsgBwQdp-H4UEFla1H9iROwQDWBf-6R9M3dKRIykOkpiwqPib3hzEI-N5T8EZj9gE7Ka6cBnZYsBpoFsS8BCz873r7coMfneVz~i5y2h9Qxgi6u-zRACBvVeGqq~5inr07ydHL0RqQ0orPLYw~4h-c3XnBFp6Jgwm~3enETadSKyIjv34ZO-xVxBvGOFPRrNd31dUui4M9xQ-1-fBAh6imFtzCGh4Cmw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section>
+            <div class="section-2">
+                <div>
+                    <img height="400px"
+                        src="https://s3-alpha-sig.figma.com/img/3e56/d298/85757f0aa0d147a57971df13219e197f?Expires=1696809600&Signature=As99qbn0-ekDtQxR~u5ZLkgTdCwlsPGnK8U3sU~uVKexlNgvHbtL7UN2jRq8QLvm91LXF1v842-fGLFZe5bnkFyw0UvORO5BKmr0B9t34k6k6lD4TZRZpPMyWs3XZSysNNk9Ba1xuZYjJzGWHNsxizu8kh7otxERrjRrRChqGALHSDXyNPxg6UK~iL4tscCIqrczr1UpTI6yYRPoEy3qtXqbi3PYU7TJPC4OinjOrWhcYqaIvrZZu5XJkwHZUgk8nBJncPwy44WkftvDGDeO3jSgSx3Im61xozebAQgnkxHdpbgnuUXAtgj4ikVp21wDjdu2r0yiDo5IhssYT2PtTQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                        alt="Image">
+                </div>
+
+                <div class="section-2-texts">
+                    <h2>Do You Know How Many Creative People Work Here ?</h2> <br>
+                    
+                    <p>Our mission is to provide quality English language instruction a variety of courses to
+                        international and local students in a professional and supportive atmosphere English teaching.
+                    </p> <br>
+                    
+                    <button class="buttons">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="section-3-bg-img">
+            <div class="section-3">
+                <div class="section-3-texts">
+                    <h2>We Are Ready To Run Your New Project!</h2> <br>
+                    
+                    <button class="buttons">Learn More</button>
+                </div>
+
+                <div class="section-3-image">
+                    <img height="400px" src="https://s3-alpha-sig.figma.com/img/0676/02d7/f32d7f1c5343d5b36056db8f92d1210b?Expires=1696809600&Signature=NutiKu1c6lehYsMkTZxxyhgzwwxSF8z1S-GGMsVnDOorvcYoKgxcLZH76ns~q4a1jgDdA1PNxE5HaBsSsPehjik7G7mCM77VH1bUl0hlv2TW-vi-oQ~lBhg8ZkPkwsVP1CzJ9e8oZQLdR1Ry~2uqYGNup7hjtRtuKFry3CkS-M2c1giwiV8SXleb04aEIRfZCy9L9QN7hZyMymlJg4P2A2vOYblP-mxuVZ9Pv3EqJgGudd0b1-fARR06Sa6YLWE1K-oOkhyyfNYKcBDcq~I~DNuc31ZhLwTaAOAVQzXeOLwZrpFuEuBq6a5nfsTCwdM8ckCZFUZb9GvwuvGfYOuSJw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="Image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤ by Aiman Shafi</p>
+    </footer>
+</body>
+
+</html>

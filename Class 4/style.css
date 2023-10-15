@@ -1,0 +1,77 @@
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+/* Header Section */
+
+.header{
+    background-color: #326155;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.header h1{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.header img{
+    border-radius: 100px;
+}
+
+/* Blog Post Section */
+
+.blog{
+    margin: 50px 0;
+}
+
+.post{
+    width: 583px;
+    height: 604px;
+    margin: 0 auto;
+    background: #d7f2ec;
+    padding: 42px;
+    box-sizing: border-box;
+}
+
+.post img{
+    width: 500px;
+    height: 274px;
+}
+
+.post a{
+    width: 100%;
+    background-color: #326155;
+    color: #ffffff;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.post h2{
+    color: #326155;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.post p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.footer{
+    color: #ffffff;
+    background-color: #326155;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 0;
+}

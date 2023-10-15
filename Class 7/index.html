@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Class | Elements</title>
+</head>
+<body>
+    <style>
+        a:link{
+            color: aliceblue;
+        }
+
+        a:visited{
+            color: green;
+        }
+
+        a:hover{
+            color: blueviolet;
+        }
+
+        li:first-child{
+            color: goldenrod;
+        }
+
+        li:last-child{
+            color: burlywood;
+        }
+
+        li:nth-child(even){
+            color: aquamarine;
+        }
+
+        /* Nth child works with class as well, ex - .box:nth-child(){} */
+
+
+    </style>
+
+    <div>
+        <ol>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Durian</li>
+            <li>Fig</li>
+            <li>Guava</li>
+            <li>Jackfruit</li>
+            <li>Kiwi</li>
+        </ol>
+    </div>
+
+    <div>
+        <a href="">First Link</a>
+        <a href="">Second Link</a>
+        <a href="">Third Link</a>
+        <a href="">Fourth Link</a>
+    </div>
+</body>
+</html>
