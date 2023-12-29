@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops, Array, Objects</title>
+</head>
+<body>
+    Loops
+    For loop, while loop
+
+    Array
+    array.shift() -> removes the first element of an array
+    array.pop() -> removes the last element of an array
+    array.push('something') -> add an element to an array
+    arrray.unshift('something') -> adds a new first element to an array
+
+    array.concat(newArray) -> adding an array in another array
+
+    array.slice(x, y) -> cuts the array from the index x to index (y-1) into a new array
+
+    array.splice(startIndex, deleteCount, replacementItem[s]) -> removes elements of the array from startIndex upto the number given as deleteCount [if deleteCount is 0, nothing is removed, replacementItems can be added] and then replaces that portion of the array with replacementItems
+
+    array.sort() -> sorts the array alphabetically, a to z. Cannot sort double digit numbers
+    array.reverse() -> sorts the array alphabetically but in reverse of sort() method, z to a. Cannot sort double digit numbers
+
+    array.sort((a,b)=>a-b) -> sorts an array of numbers properly in ascending order
+    array.sort((a,b)=>b-a) -> sorts an array of numbers properly in descending order
+    
+    Object 
+    let car = {
+        name: 'BMW',
+        model: 2018,
+        price: '$ 60,000'
+        color: 'Black'
+    }
+
+    console.log(car.name);
+</body>
+</html>

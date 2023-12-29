@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Italianno&family=Montserrat&family=Playfair+Display&family=Poppins:wght@400;700&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            font-size: 10px;
+            font-family: 'Italianno', cursive;
+            margin: auto;
+            text-align: center;
+
+            background-color: black;
+            color: gold;
+        }
+
+        h1{
+            font-size: 4rem;
+        }
+
+        h2{
+            font-size: 3.2rem;
+        }
+
+        input{
+            font-family: 'Italianno', cursive;
+            font-size: 2rem;
+            color: black;
+            font-weight: 700;
+
+            border: 0.5rem solid violet;
+            padding: 0.5rem 1rem;
+        }
+
+        .btn{
+            font-family: 'Italianno', cursive;
+            font-size: 1.5rem;
+            color: black;
+            font-weight: 600;
+
+            border: 0.1rem solid violet;
+            padding: 0 0.5rem;
+        }
+
+        .tasks{
+            margin: 2rem 0rem;
+        }
+    </style>
+
+
+
+    <header>
+        <h1>To Do List</h1>
+        <form action="" id="taskForm">
+            <input type="text" id="taskInput">
+            <input type="submit" id="submitButton" value="Add Task">
+        </form>
+    </header>
+
+    <main>
+        <h2>Tasks</h2>
+        <div id="taskList">
+            <!-- <div class="content">
+                <input type="text">
+            </div>
+            <div class="actions">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </div> -->
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
